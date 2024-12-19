@@ -1,51 +1,101 @@
-/* Navbar.module.css */
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 15px 30px; /* Increased padding for a spacious navbar */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Logo styling */
 .logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.8rem; /* Slightly larger logo text */
+  font-size: 24px;
   font-weight: bold;
-  margin-left: 10px; /* Add margin to the left */
+  text-decoration: none;
+  color: #333;
 }
 
+/* Links container */
 .links {
-  list-style: none;
   display: flex;
-  gap: 30px; /* Increased gap between links */
+  align-items: center;
+  gap: 20px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.links li {
-  margin: 0 10px; /* Add a bit of margin around each list item */
-}
-
+/* Link styling */
 .links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem; /* Slightly larger link text */
-  padding: 8px 12px; /* Add padding around links for a clickable area */
-  border-radius: 4px; /* Add slight rounding for hover effect */
-  transition: background-color 0.3s, color 0.3s;
   display: flex;
   align-items: center;
-}
-
-.links li img {
-  height: 38px;
-  margin: 0 8px;
-  width: 36.79px;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s ease;
 }
 
 .links li a:hover {
-  background-color: #00bcd4;
-  color: #fff;
+  color: #007bff;
+}
+
+/* Icon styling */
+.links li a img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .links li a {
+    font-size: 14px;
+  }
+
+  .links li a img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Responsive for very small screens (mobile) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  .links li a {
+    font-size: 12px;
+  }
+
+  .links li a img {
+    width: 16px;
+    height: 16px;
+  }
 }
