@@ -1,0 +1,44 @@
+.productGrid {
+  grid-gap: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3rem 15rem;
+}
+
+.homeContainer .searchForm {
+  margin: auto;
+  width: 25%;
+}
+
+.filterContainer {
+  background: #f0f0fc;
+  border-radius: 10px;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  text-align: center;
+  top: 30%;
+  width: 14rem;
+}
+
+form input[type="search"] {
+  background: #f4f6f8 !important;
+  border: 1px solid #7064e5;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #7064e5 !important;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 1em 0 !important;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin: 12rem 18rem;
+}
