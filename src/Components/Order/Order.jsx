@@ -1,6 +1,6 @@
 import React from "react";
 import { useOrderContext } from "../contexts/orderContext";
-import styles from "../Order/order.module.css"; // CSS Module for styling
+import styles from "../Order/Order.module.css";
 
 const OrdersPage = () => {
   const { orders } = useOrderContext();
